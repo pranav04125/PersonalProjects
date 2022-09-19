@@ -1,12 +1,47 @@
-from operator import le
+import turtle
 
+def tallhouse():
+    # Rectangle
+    turtle.left(90)
+    turtle.fillcolor("green")
+    turtle.begin_fill()
+    turtle.forward(200)
+    turtle.left(90)
+    turtle.forward(150)
+    turtle.left(90)
+    turtle.forward(200)
+    turtle.left(90)
+    turtle.forward(150)
+    turtle.end_fill()
 
-def perimeter(length, breadth):
-    return (length + breadth)*2
+    turtle.fillcolor("brown")
+    turtle.begin_fill()
+    turtle.penup()
+    turtle.goto(0, 200)
+    turtle.pendown()
+    turtle.left(120)
+    turtle.forward(150)
+    turtle.left(120)
+    turtle.forward(150)
+    turtle.left(120)
+    turtle.forward(150)
+    turtle.end_fill()
 
-def main():
-    a = int(input("Enter length: "))
-    b = int(input("Enter breadth: "))
-    print("Perimeter is", perimeter(a, b))
+    turtle.penup()
+    turtle.goto(-65, 0)
+    turtle.pendown()
+    turtle.fillcolor("yellow")
+    turtle.begin_fill()
+    turtle.setheading(180)
+    turtle.forward(20)
+    turtle.right(90)
+    turtle.forward(60)
+    turtle.right(90)
+    turtle.forward(20)
+    turtle.right(90)
+    turtle.forward(60)
+    turtle.end_fill()
 
-main()
+    turtle.done()
+    
+tallhouse()
