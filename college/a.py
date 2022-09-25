@@ -1,14 +1,5 @@
-from xmlrpc.client import FastMarshaller
-
-
-def test_1():
-    assert False
-
-def test_2():
-    assert True
-
-def main():
-    test_1()
-    test_2()
-
-main()
+for a in (True, False):
+    for b in (True, False):
+        for c in (True, False):
+            if ((not a) or (not b) or (not c)) and (not ((not a) and (not b))):
+                print(a, b, c)
