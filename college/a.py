@@ -1,5 +1,6 @@
-for a in (True, False):
-    for b in (True, False):
-        for c in (True, False):
-            if ((not a) or (not b) or (not c)) and (not ((not a) and (not b))):
-                print(a, b, c)
+def add(x, y):
+    print(x + y)
+
+a = 15
+b = 3
+add(a/3, b+1)
