@@ -229,7 +229,7 @@ def shorthouse(x, y):
     doorshort(x, y)
 
 def main():
-    t.speed(10)
+    t.speed(5)
     draw_tree(size=60, x=200, y=170)
     tallhouse(size=1, x=-300, y=-45)
     shorthouse(-200, -45)
